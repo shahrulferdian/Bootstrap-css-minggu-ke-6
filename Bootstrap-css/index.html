@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- nav -->
+    <nav class="navbar navbar-light bg-light navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="image/kfc.jfif" alt="" width="180" loading="kfc" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#produk">produk</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#promo">promo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tentang">tentang</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  >kontak</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- slider -->
+    <div class="container mt-4 mb-3">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <!-- isi slider -->
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="image/burger.jfif" class="d-block" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="image/burger1.jfif" class="d-block" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="image/burger3.jfif" class="d-block" alt="..." />
+          </div>
+        </div>
+        <!-- tombol kiri kanan -->
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon bg-dark"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon bg-dark"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- jumbutron -->
+
+    <div class="jumbotron jumbotron-fluid bg-light text-center">
+      <div class="container">
+        <h1 class="display-1">promo murah</h1>
+        <p class="lead">
+          Dropped the jumbotron component as it can be replicated with
+          utilities.
+        </p>
+        <hr class="my-4" />
+        <p>
+          Pagination links now have customizable margin-left that are
+          dynamically rounded on all corners when separated from one another.
+        </p>
+        <a class="btn btn-outline-primary btn-lg" href="#" role="button"
+          >beli</a
+        >
+      </div>
+    </div>
+
+    <!-- card -->
+    <div class="container mt-4">
+      <div class="row" id="produk">
+        <div class="col-lg-4 d-flex justify-content-center">
+          <div class="card border-0" style="width: 18rem">
+            <img src="image/fb.png" class="card-img-top mt-4" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Face Book</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <h5 class="card-title">Rp. 3jt</h5>
+              <a href="#" class="btn btn-outline-primary">beli</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 d-flex justify-content-center">
+          <div class="card border-0" style="width: 18rem">
+            <img src="image/ig.jfif" class="card-img-top mt-4" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Instagram</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <h5 class="card-title">Rp. 3jt</h5>
+              <a href="#" class="btn btn-outline-primary">beli</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 d-flex justify-content-center">
+          <div class="card border-0" style="width: 18rem">
+            <img src="image/wa.png" class="card-img-top mt-4" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Whats App</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <h5 class="card-title">Rp. 3jt</h5>
+              <a href="#" class="btn btn-outline-primary">beli</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- promo -->
+    <div class="container" id="promo">
+      <div class="row text-center bg-black text-light">
+        <div class="col">
+          <h1>diskon 100%</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 me-auto">
+          <img src="image/star.png" alt="" />
+        </div>
+        <div class="col-lg-8">
+          <table class="table mt-3 table-borderless">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">menu</th>
+                <th scope="col">diskon harga</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>burger ayam</td>
+                <td>99%</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>burger sapi</td>
+                <td>100%</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>pizza</td>
+                <td>45%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid bg-dark text-light" id="tentang">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <p>
+              <strong>SHAHRUL F.J </strong><br />
+              Sidoarjo Jatim <br />
+              Indonesia 123456
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <p>
+              <strong>Pembayaran </strong><br />
+              BRI <br />
+              12345<br />
+              BCA <br />
+              142536<br />
+              Mandiri <br />
+              34256
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <p>
+              <strong>Tentang</strong><br />SHAHRUL F.J didirikan pada tahun
+              2004
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">form kontak</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- body -->
+            <form>
+              <div class="row">
+                <div class="col">
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >nama</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                    />
+                    <div id="emailHelp" class="form-text">
+                      isi nama dan alamat anda
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label"
+                      >alamat</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputPassword1"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label"
+                      >kota</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputPassword1"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label"
+                      >kode pos</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputPassword1"
+                    />
+                  </div>
+                </div>
+              </div>
+            </form>
+            <!-- ---- -->
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              kirim
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
